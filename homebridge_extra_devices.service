@@ -1,0 +1,11 @@
+[Unit]
+Description=HomebridgeExtra HAP Services
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/hez/homebridge_extra_devices/bin/start.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
